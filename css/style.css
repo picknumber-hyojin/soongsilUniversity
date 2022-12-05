@@ -1,0 +1,353 @@
+
+:root{
+    --main-bg-color:#29282f;
+    --main-color:#ffc704;
+}
+
+/* common */
+.flex{
+    display: flex;
+}
+
+input,button{
+    background-color: transparent;
+}
+
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+header{
+    padding: 50px 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+
+.button_container svg{
+    fill:#fff;
+    margin-right: 1rem;
+}
+
+.button_container .btn_refresh svg{
+    margin-right: 0;
+}
+
+section{
+    padding: 0 80px;
+    display: flex;
+}
+
+.main{
+    width:60%;
+}
+
+.keypad{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.main .info{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.verification_code{
+margin: 24px 0 12px;
+align-items: center;
+}
+
+.code_input{
+    height: 85px;
+    padding: 18px;
+    border-radius: 17px;
+    box-shadow: 0 0 12.6px 3.4px rgba(35, 35, 36, 0.92);
+    background-color: #36353b;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: var(--main-color);
+    flex:1;
+}
+
+.code_input input{
+    width: calc(100% / 3);
+    background-color: transparent;
+    font-size: 32px;
+    color: var(--main-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+.code_input span{
+    margin: 0 0.5rem;
+    background-color: transparent;
+}
+
+
+.button{
+    background-color: #a8a8a8;
+    color: #7f7f7f;
+}
+
+.button:focus{
+    background-color: var(--main-color);
+    color: #29282f;
+}
+
+.submit-btn{
+    width: 150px;
+    height: 85px;
+    border-radius: 18px;
+    font-weight: 800;
+    margin-left: 1rem;
+    font-size: 27px;
+}
+
+.code_check{
+    position: relative;
+}
+
+.code_check button{
+    width: 185px;
+    font-size: 25px;
+}
+
+.code_check .code_check_input{
+    border-radius: 17px;
+    box-shadow: 0 0 12.6px 3.4px rgba(35, 35, 36, 0.92);
+    background-color: #36353b;
+    align-items: center;
+    padding: 1rem;
+    height: 85px;
+    width: 239px;
+    position: relative;
+}
+
+.code_check .code_check_input input{
+    height:100%;
+    font-size: 32px;
+    color:var(--main-color);
+    font-weight: bold;
+}
+
+.code_check .code_check_input .code_time{
+    color:#fff;
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.personal_information{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.people_number{
+    justify-content: space-between;
+    margin:1.5rem 0;
+}
+
+.people_title{
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-bottom:0.5rem;
+}
+
+.people_btn{
+    display: flex;
+    align-items: center;
+}
+
+.people_btn .number_btn{
+    background-color: #ffc704;
+    border-radius: 50%;
+    font-size: 67px;
+    font-weight: bold;
+    text-align: center;
+    color: #36353b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.people_btn .number_btn img{
+    width: 20px;
+    height: auto;
+}
+
+.people_number_input{
+    width: 110px;
+    height: 63px;
+    border-radius: 17px;
+    box-shadow: 0 0 12.6px 3.4px rgba(35, 35, 36, 0.92);
+    background-color: #36353b;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0.5rem;
+    color:var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal_information label{
+    font-size: 20px;
+    line-height: 0.48;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    align-items: center;
+    display:flex;
+    margin-left: 0.5rem;
+}
+
+.personal_information label span{
+    color: var(--main-color);
+    margin-left: 0.5rem;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+
+
+
+input[type=checkbox]{
+  appearance: none;
+  border: 1px solid #fff;
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1;
+  z-index: 5;
+}
+
+input[type=checkbox]:checked, .form input[type=checkbox]:focus{
+  border:1px solid var(--main-color);
+}
+
+input[type=checkbox]:after{
+  content: "";
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  border-radius: 100%;
+  appearance: none;
+  display: block;
+  width: 5px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  outline: none;
+  transform: scale(2);
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 0;
+}
+input[type=checkbox]:active:not(:checked):after{
+  transform: scale(0);
+  opacity: 1;
+  transition: opacity 0s, transform 0s;
+}
+
+
+input[type=checkbox]:checked:before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 15px;
+  height: 15px;
+  top: 3px;
+  left: 5px;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.stanBby{
+    align-items: center;
+    justify-content: center;
+}
+
+.stanBby p{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.48;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+
+}
+
+.standBy_now{
+    width: 180px;
+    height: 80px;
+    border-radius: 17px;
+    box-shadow: 0 0 12.6px 3.4px rgba(35, 35, 36, 0.92);
+    background-color: #36353b;
+    margin: 0 1rem;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 0.6;
+    text-align: center;
+    color: #ffc704;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_box{
+    position: relative;
+}
+.number{
+height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin:0 0.5rem 0.5rem 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.number.delet{
+    font-size: 22px;
+    background-color: #bfbfc1;
+    font-weight: bold;
+}
+
+.number img{
+    width: 60px;
+}
+
+.keypad .submit-btn{
+    width: 267px;
+    margin-top: 1rem;
+}
